@@ -1,0 +1,17 @@
+title User creates new note 
+
+
+browser->server: HTTP POST to https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: Response with 302 (URL Redirect)
+
+browser->server: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: Response with reload
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "Hello World", date: "2021-07-17" }, ...]

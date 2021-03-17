@@ -1,0 +1,8 @@
+title Single page app 
+
+
+browser->server: HTTP GET request to https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: 200 HTML code
+
+browser->server: AJAX
+server-->browser: JSON 
